@@ -174,7 +174,7 @@ function Header() {
                 <img alt="LinkedIn" className="w-full h-full object-contain" src={img1} />
               </a>
               <a 
-                href="https://tzhen12.github.io/src/assets/Tiana_Zhen_Resume.pdf" 
+                href="https://tzhen12.github.io/Tiana_Zhen_Resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] hover:opacity-80 transition-opacity"
