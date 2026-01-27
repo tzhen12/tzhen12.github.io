@@ -54,7 +54,7 @@ function NavigationMenu({
     if (element) {
       const navHeight = window.innerWidth < 768 ? 64 : 76;
       // Different offsets for different sections
-      const additionalOffset = sectionId === "experience" ? 120 : sectionId === "skills" ? 50 : 0;
+      const additionalOffset = sectionId === "experience" ? 80 : sectionId === "skills" ? 50 : 0;
       const elementPosition =
         element.getBoundingClientRect().top;
       const offsetPosition =
