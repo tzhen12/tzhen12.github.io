@@ -72,8 +72,8 @@ function NavigationMenu({
   };
 
   const buttonClass = isMobile
-    ? "font-['Epilogue:SemiBold',sans-serif] font-semibold text-[#576f87] text-xl hover:text-[#43729c] transition-colors py-3 w-full text-left"
-    : "font-['Epilogue:SemiBold',sans-serif] font-semibold text-[#576f87] text-base md:text-[19.379px] hover:text-[#43729c] transition-colors";
+    ? "font-['Epilogue:SemiBold',sans-serif] font-semibold text-[#43729c] text-xl hover:text-[#5a8fc4] transition-colors py-3 w-full text-left bg-[#d9d9d9] rounded-[20px] px-6"
+    : "font-['Epilogue:SemiBold',sans-serif] font-semibold text-[#43729c] text-base md:text-[19.379px] hover:text-[#5a8fc4] transition-colors bg-[#d9d9d9] rounded-[20px] px-6 py-3";
 
   return (
     <div
@@ -230,7 +230,7 @@ function Header() {
                 />
               </a>
               <a
-                href="https://tzhen12.github.io/assets/Tiana_Zhen_Resume.pdf"
+                href="https://tzhen12.github.io/Tiana_Zhen_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] hover:opacity-80 transition-opacity"
