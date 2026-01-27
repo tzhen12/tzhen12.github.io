@@ -53,10 +53,12 @@ function NavigationMenu({
     const element = document.getElementById(sectionId);
     if (element) {
       const navHeight = window.innerWidth < 768 ? 64 : 76;
+      // Different offsets for different sections
+      const additionalOffset = sectionId === "experience" ? 120 : sectionId === "skills" ? 50 : 0;
       const elementPosition =
         element.getBoundingClientRect().top;
       const offsetPosition =
-        elementPosition + window.pageYOffset - navHeight;
+        elementPosition + window.pageYOffset - navHeight + additionalOffset;
 
       window.scrollTo({
         top: offsetPosition,
@@ -329,7 +331,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="bg-[#576f87] py-10 md:py-20 px-4 md:px-8 w-full box-border"
+      className="bg-[#576f87] py-10 md:py-20 px-4 md:px-8 w-full box-border scroll-mt-4"
     >
       <div className="max-w-[1440px] mx-auto w-full">
         <h2 className="font-['Epilogue:Bold',sans-serif] font-bold text-[#d9d9d9] text-[28px] md:text-[40px] leading-[30px] mb-8 md:mb-16">
